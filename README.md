@@ -1,64 +1,20 @@
-# Laravel E-Commerce — Ready Project (Interview Submission)
+# Laravel E-Commerce Mini Module
 
-This archive contains a ready project skeleton with the E-Commerce mini module integrated.  
-**Important:** This is a skeleton that will become a working Laravel application once you run `composer update` to fetch the framework and dependencies.
+This is a small Laravel 11 E-Commerce demo module built as part of an interview task.  
+It includes:
 
-## Steps to make it runnable
-
-1. Install PHP (8.1+ recommended), Composer, and Node (optional for frontend).
-2. From project root, run:
-```bash
-composer update
-```
-This will download the Laravel framework and dependencies.  
-3. Copy environment file:
-```bash
-cp .env.example .env
-```
-4. If using SQLite (default in .env.example), create the file:
-```bash
-mkdir -p database
-touch database/database.sqlite
-```
-Or update `.env` with your MySQL/Postgres credentials.
-
-5. Generate app key:
-```bash
-php artisan key:generate
-```
-
-6. Run migrations & seed sample products:
-```bash
-php artisan migrate --seed
-```
-
-7. (Optional) Install Breeze auth scaffolding (if you want UI auth):
-```bash
-composer require laravel/breeze --dev
-php artisan breeze:install blade
-npm install && npm run build
-php artisan migrate
-```
-
-8. Serve:
-```bash
-php artisan serve
-```
-
-Open http://localhost:8000
+- **Products CRUD (Admin)**
+- **Browse Products & Add to Cart**
+- **Cart in Session (Guest) / Cart in DB (Logged-in)**
+- **Checkout API** that stores orders + order items in the database
 
 ---
 
-If you prefer, you can run:
+## 🚀 Installation & Setup
+
+Follow these steps to install and run the project:
+
+### 1. Unzip Project
 ```bash
-php -S localhost:8000 -t public
-```
-but `php artisan serve` is recommended.
-
---- 
-
-Included features:
-- Products CRUD (Admin)
-- Shop (browse products)
-- Cart (session for guests, DB for logged-in users)
-- Checkout API: POST /api/checkout
+unzip laravel-ecommerce-ready.zip
+cd laravel-ecommerce-ready
