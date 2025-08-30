@@ -1,0 +1,3 @@
+<?php
+// This is a placeholder. After running composer update, the real artisan will be available.
+echo "Run 'composer update' to install Laravel and generate artisan.\n";
